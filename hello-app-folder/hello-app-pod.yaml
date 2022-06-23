@@ -10,3 +10,5 @@ spec:
   - image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
     imagePullPolicy: IfNotPresent
     name: hello-app
+    ports:
+    - containerPort: 8080
