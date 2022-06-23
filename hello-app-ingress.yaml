@@ -13,6 +13,6 @@ spec:
           service:
             name: hello-app
             port:
-              number: 8080
+              number: 8010
         path: /hello
         pathType: Prefix
