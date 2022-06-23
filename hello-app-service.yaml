@@ -2,13 +2,15 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: hello-app
+    run: hello-app
   name: hello-app
   namespace: default
 spec:
   ports:
-  - port: 8080
+  - port: 8010
     protocol: TCP
     targetPort: 8080
   selector:
-    app: hello-app
+    run: hello-app
+  sessionAffinity: None
+  type: ClusterIP
