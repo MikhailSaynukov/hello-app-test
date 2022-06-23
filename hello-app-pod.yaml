@@ -4,7 +4,7 @@ metadata:
   labels:
     app: hello-app
   name: hello-app-5c9b7f89cc-zgs4b
-  namespace: default
+  namespace: hello-app
 spec:
   containers:
   - image: us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
