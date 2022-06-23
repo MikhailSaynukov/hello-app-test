@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   labels:
-    app: hello-app
+    run: hello-app
   name: hello-app-5c9b7f89cc-zgs4b
   namespace: hello-app
 spec:
