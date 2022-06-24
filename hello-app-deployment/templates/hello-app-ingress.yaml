@@ -15,6 +15,6 @@ spec:
           service:
             name: hello-app
             port:
-              number: 8010
+              number: {{.Values.appPorts.servicePort}}
         path: /hello-app
         pathType: Prefix

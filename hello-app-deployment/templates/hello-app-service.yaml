@@ -8,9 +8,9 @@ metadata:
   namespace: hello-app
 spec:
   ports:
-  - port: 8010
+  - port: {{.Values.appPorts.servicePort}}
     protocol: TCP
-    targetPort: 8080
+    targetPort: {{.Values.appPorts.containerPort}}
   selector:
     app: hello-app
   sessionAffinity: None
