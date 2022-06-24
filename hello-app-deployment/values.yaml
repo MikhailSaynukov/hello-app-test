@@ -1,3 +1,5 @@
 appPorts:
   containerPort: 8080
   servicePort: 8010
+app:
+  replicas: 2
